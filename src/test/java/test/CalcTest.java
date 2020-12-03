@@ -22,7 +22,6 @@ public class CalcTest extends BaseTest {
         objCalc.clickAgreeBtn();
     }
 
-
     @Test()
     public void test_first_formula() throws Exception {
 
@@ -38,7 +37,6 @@ public class CalcTest extends BaseTest {
     public void test_second_formula() throws Exception {
 
         test = extent.createTest("test second formula");
-
         testedVal="8";
         ActualVal=objCalc.getSecondFormulaResult();
         System.out.println("ActualVal:"+ActualVal);
@@ -49,7 +47,6 @@ public class CalcTest extends BaseTest {
     public void test_third_formula() throws Exception {
 
         test = extent.createTest("test third formula");
-
         testedVal ="20";
         ActualVal=objCalc.getThirdFormulaResult();
         System.out.println("ActualVal:"+ActualVal);
@@ -60,7 +57,6 @@ public class CalcTest extends BaseTest {
     public void test_forth_formula() throws Exception {
 
         test = extent.createTest("test forth formula");
-
         testedVal ="0.5";
         ActualVal=objCalc.getForthFormulaResult();
         System.out.println("ActualVal:"+ActualVal);

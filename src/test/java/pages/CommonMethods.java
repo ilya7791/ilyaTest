@@ -8,7 +8,6 @@ import java.io.PrintWriter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
 public class CommonMethods {
 
     WebDriver driver;
@@ -24,8 +23,4 @@ public class CommonMethods {
         driver.findElement(locator).click();
         Thread.sleep(200);
     }
-
-
-
-
 }

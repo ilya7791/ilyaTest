@@ -9,8 +9,6 @@ public class Calc extends CommonMethods {
     By btn1 = By.id("Btn1");
     By btn2 = By.id("Btn2");
     By btn3 = By.id("Btn3");
-    By btn5 = By.id("Btn5");
-    By btn8 = By.id("Btn8");
     By BtnCalc = By.id("BtnCalc");
     By openBracketBtn = By.id("BtnParanL");
     By closeBracketBtn = By.id("BtnParanR");
@@ -33,7 +31,6 @@ public class Calc extends CommonMethods {
         Thread.sleep(2000);
     }
 
-
     public void clickAgreeBtn() throws Exception {
 
         click(agreeBtn);
@@ -47,16 +44,6 @@ public class Calc extends CommonMethods {
     public void clickBtn3() throws Exception {
 
         click(btn3);
-    }
-
-    public void clickBtn5() throws Exception {
-
-        click(btn5);
-    }
-
-    public void clickBtn8() throws Exception {
-
-        click(btn8);
     }
 
     public void clickBtn1() throws Exception {
@@ -83,7 +70,6 @@ public class Calc extends CommonMethods {
 
         click(sinusBtn);
     }
-
 
     public void clickBtnCalc() throws Exception {
 
@@ -114,8 +100,6 @@ public class Calc extends CommonMethods {
         return attrVal;
     }
 
-
-
     public String getFirstFormulaResult() throws Exception {
 
         clickBtn2();
@@ -125,7 +109,6 @@ public class Calc extends CommonMethods {
         String result=getResult();
         return result;
     }
-
 
     public String getSecondFormulaResult() throws Exception {
 
@@ -137,8 +120,6 @@ public class Calc extends CommonMethods {
         String result=getResult();
         return result;
     }
-
-
 
     public String getThirdFormulaResult() throws Exception {
 
@@ -165,6 +146,4 @@ public class Calc extends CommonMethods {
         String result=getResult();
         return result;
     }
-
-
 }
