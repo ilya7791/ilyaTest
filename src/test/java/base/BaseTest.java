@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -24,7 +25,7 @@ public class BaseTest {
 
     public WebDriver driver;
     public ExtentHtmlReporter htmlReporter;
-    public ExtentReports extent;
+    public static ExtentReports extent;
     public ExtentTest test;
 
     @BeforeSuite(alwaysRun = true)
@@ -34,7 +35,6 @@ public class BaseTest {
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
     }
-
 
     @BeforeMethod(alwaysRun = true)
     public void startChrome() {
@@ -49,6 +49,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
     }
+
 
 
     @AfterMethod(alwaysRun = true)
@@ -66,9 +67,9 @@ public class BaseTest {
 
     @AfterSuite(alwaysRun = true)
     public void AfterSuite() throws Exception {
-
         extent.flush();
     }
+
 
 
 }
