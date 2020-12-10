@@ -1,0 +1,4 @@
+base\BaseTest.class
+test\CalcTest.class
+pages\Calc.class
+pages\CommonMethods.class
