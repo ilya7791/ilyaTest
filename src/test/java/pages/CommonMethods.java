@@ -19,10 +19,6 @@ public class CommonMethods {
         this.driver=driver;
     }
 
-    public CommonMethods()
-    {
-    }
-
 
     public void click(By locator) throws Exception {
 

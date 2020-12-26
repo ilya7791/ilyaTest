@@ -44,16 +44,14 @@ public class BaseTest {
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
-        //System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
-        System.setProperty("webdriver.chrome.driver" ,  "/Applications/chromedriver");
-        //System.setProperty("webdriver.chrome.driver" ,  "/Users/ilyaliberman/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
     }
 
 
-
+////
     @AfterMethod(alwaysRun = true)
     public void closeChrome(ITestResult result) {
 
