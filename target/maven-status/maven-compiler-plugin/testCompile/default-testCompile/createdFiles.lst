@@ -1,4 +1,10 @@
-base\BaseTest.class
-test\CalcTest.class
-pages\Calc.class
-pages\CommonMethods.class
+test/ChatTest.class
+test/CareersAllTest.class
+test/CareersTlvTest.class
+test/ilya.class
+pages/CareersTlv.class
+pages/Chat.class
+pages/CommonLocators.class
+pages/CareersAll.class
+pages/CommonMethods.class
+base/BaseTest.class
